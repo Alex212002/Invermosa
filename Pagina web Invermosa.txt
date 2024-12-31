@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invermosa - Edificio en Alquiler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero .overlay h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about, .contact {
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .about h2, .contact h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Invermosa</h1>
+        <p>Soluciones inmobiliarias que inspiran</p>
+    </header>
+    <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#gallery">Galería</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="hero">
+        <img src="hero-image.jpg" alt="Vista del edificio">
+        <div class="overlay">
+            <h2>Descubre el edificio perfecto para tus necesidades</h2>
+        </div>
+    </div>
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>En Invermosa, nos especializamos en ofrecer espacios comerciales y residenciales de alta calidad. Nuestro compromiso es proporcionar soluciones adaptadas a tus necesidades con diseños modernos y ubicaciones estratégicas.</p>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Galería</h2>
+        <img src="image1.jpg" alt="Interior del edificio">
+        <img src="image2.jpg" alt="Vista panorámica del edificio">
+        <img src="image3.jpg" alt="Espacio comercial disponible">
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contáctanos</h2>
+        <p>Teléfono: +505 1234 5678</p>
+        <p>Email: contacto@invermosa.com</p>
+        <p>Dirección: Reparto Puntaldía, Managua, Nicaragua</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Invermosa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
